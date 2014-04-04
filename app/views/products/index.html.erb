@@ -1,4 +1,4 @@
-<h1>All Products</h1>
+<!--<h1>All Products</h1>
 
 <p><%= link_to 'New Product' , new_product_path %></p>
 
@@ -13,3 +13,46 @@
     <hr>
   </section>
 <% end %>
+
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+          <meta charset="UTF-8" />
+          <link rel="stylesheet" type="text/css" href="clearstyles.css" />
+          <title>Clear!</title>
+  </head>
+  <body>
+    <section id= "container">
+           
+            <section id = "maincontent" style='overflow:auto; width:400px;height:400px;'>
+              <table>
+                <tbody>
+                  <% @products.each do |product| %>
+                    <tr>
+                      <p>
+                        <strong><%= link_to product.title, product %></strong>
+                      </p>
+                      <p>
+                        <%= product.description %>
+                      </p>
+                      <p>
+                        <strong>Price:</strong>
+                          <%= product.price %>
+                      </p>
+                      <p>
+                        <strong>Stock quantity:</strong>
+                        <%= product.stock_quantity %>
+                      </p>
+                      <br>
+                      <%= link_to 'edit', edit_product_path(product) %>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </section>
+            <aside>Categories</aside>
+            <footer></footer>
+    </section>
+  </body>
+</html>

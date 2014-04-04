@@ -1,3 +1,60 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body
+ {
+	 margin:0px;
+	 padding:0px;
+	 font-family:Helvetica;
+	 background:#e6e6e6;
+ }
+
+#container
+{
+	width:700px;
+	margin:30px auto;
+	background:white;
+	padding:10px;
+}
+
+header
+{
+	width:700px;
+	height:60px;
+	padding:10px;
+	margin:5px auto;
+	background:white;
+	border:black solid 2px;
+        font-size: 50px;
+
+}
+
+#maincontent
+{
+	float:right;
+	width:400px;
+	height:auto;
+	padding:10px;
+	margin:5px 40px;
+	background:white;
+	border:black solid 2px;
+}
+
+aside
+{
+	float:left;
+	width:100px;
+	height:300px;
+	padding:10px;
+	margin:5px 35px 5px;
+	background:white;
+	border:black solid 2px;
+}
+
+footer
+{
+	width:600px;
+	height:60px;
+	padding:10px;
+	margin:0px auto;
+	background:white;
+	border:black solid 2px;
+	clear: both;
+}
